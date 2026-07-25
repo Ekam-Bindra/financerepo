@@ -39,6 +39,23 @@ scope.
 - Treat security, accessibility, observability, and failure handling as part of
   implementation rather than follow-up work.
 
+## Progress reporting
+
+Use `docs/project-management/PROJECT_STATUS.md` as the verified progress
+ledger. At the end of every user-facing response about repository work, report:
+
+- completed master tasks as `X/242 (Y%)`;
+- task IDs newly completed in that response, or `none`;
+- the next unblocked task IDs and the immediate action;
+- any blocker that prevents the next action.
+
+Count a task only when its acceptance criteria and the Definition of Done are
+satisfied by repository or external-system evidence. Do not count proposed,
+partially implemented, scaffold-only, or unverified work. Update the ledger in
+the same change that completes a task. When the user gives a short instruction
+such as "continue", select the next unblocked work from the ledger and master
+task list while respecting dependencies, branch scope, and pull-request gates.
+
 ## Repository structure
 
 - `apps/web`: Next.js App Router frontend.
@@ -98,4 +115,3 @@ A task is complete only when:
 - documentation and API contracts are current;
 - deployment, rollback, and recovery implications are understood;
 - no critical unresolved defects remain.
-
