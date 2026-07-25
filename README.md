@@ -13,6 +13,7 @@ Enterprise-grade AI research platform for collecting, organizing, analyzing, and
 
 - [Enterprise Requirements](docs/requirements/ENTERPRISE_REQUIREMENTS.md)
 - [Technical Design and 48-Week Implementation Plan](docs/design/TECHNICAL_DESIGN_AND_ROADMAP.md)
+- [Verified Project Status](docs/project-management/PROJECT_STATUS.md)
 - [Two-Person Collaboration Workflow](docs/project-management/TWO_PERSON_COLLABORATION_WORKFLOW.md)
 - [Master Execution Prompt](docs/prompts/MASTER_EXECUTION_PROMPT.md)
 
@@ -31,4 +32,72 @@ Reduce the amount of repetitive work required during the first stage of equity r
 
 ## Status
 
-Planning and architecture baseline established. Implementation has not yet begun.
+Engineering foundation in progress on `feature/PLAT-001-project-foundation`.
+SEC ingestion, document processing, financial extraction, and AI functionality
+have not begun.
+
+## Foundation architecture
+
+```text
+financerepo/
+├── apps/
+│   └── web/                    # Next.js App Router frontend
+├── services/
+│   └── api/                    # FastAPI backend
+├── packages/
+│   └── api-contracts/          # Shared TypeScript contracts
+├── database/
+│   └── migrations/
+├── infrastructure/
+│   └── docker/
+├── tests/
+│   └── integration/
+├── .github/workflows/
+├── AGENTS.md
+├── docker-compose.yml
+├── Makefile
+└── pnpm-workspace.yaml
+```
+
+## Prerequisites
+
+- Node.js 22 or newer.
+- pnpm 9.
+- Python 3.12.
+- Docker Desktop with Docker Compose.
+
+## Local setup
+
+```bash
+cp .env.example .env
+make setup
+make check
+make dev
+```
+
+Local services:
+
+- Web application: `http://localhost:3000`
+- Web health: `http://localhost:3000/api/health`
+- API documentation: `http://localhost:8000/api/docs`
+- API liveness: `http://localhost:8000/api/v1/health/live`
+- API readiness: `http://localhost:8000/api/v1/health/ready`
+
+Readiness verifies PostgreSQL and Redis connectivity and returns HTTP `503`
+when either dependency is unavailable.
+
+## Development commands
+
+```bash
+make install
+make dev
+make format
+make lint
+make typecheck
+make test
+make build
+make check
+```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the branch and pull-request workflow
+and [SECURITY.md](SECURITY.md) for vulnerability-reporting guidance.
