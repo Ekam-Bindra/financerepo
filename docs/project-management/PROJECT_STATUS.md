@@ -7,7 +7,7 @@ Last reconciled: 2026-07-25
 - Master backlog: 242 unique task IDs
 - Verified complete: 17
 - Completion: 7.0%
-- Current gate: foundation pull request must be reviewed and merged
+- Current gate: foundation pull request must pass required checks and merge
 
 This ledger is deliberately conservative. A task is counted only when its
 acceptance criteria and the repository Definition of Done are satisfied by
@@ -50,8 +50,8 @@ counted.
 
 ## Next unblocked work
 
-1. Obtain the required independent approval and merge the passing foundation
-   pull request.
+1. Merge the foundation pull request after its required checks pass. The
+   temporary solo-maintainer review policy is recorded in ADR 0001.
 2. Run the complete Docker Compose stack and its health checks on a
    Docker-capable workstation to verify and complete `PLAT-007`.
 3. On a new branch after the foundation merge, create the product and technical
