@@ -7,6 +7,7 @@ Build the enterprise AI-Powered Equity Research Assistant defined in:
 - `docs/requirements/ENTERPRISE_REQUIREMENTS.md`
 - `docs/design/TECHNICAL_DESIGN_AND_ROADMAP.md`
 - `docs/project-management/MASTER_TASK_LIST.md`
+- `docs/project-management/TASK_OWNERSHIP.md`
 - `docs/project-management/TWO_PERSON_COLLABORATION_WORKFLOW.md`
 - `docs/prompts/MASTER_EXECUTION_PROMPT.md`
 
@@ -24,6 +25,11 @@ scope.
 ## Working rules
 
 - Never implement directly on `main`.
+- Before selecting work, read `TASK_OWNERSHIP.md` and work only on the active
+  developer's assigned task IDs. The repository owner defaults to Ekam unless
+  the user explicitly identifies Abhinav.
+- Do not reassign a task informally. Merge an ownership-document pull request
+  before implementation begins under a different owner.
 - Work on one declared task or tightly related task group at a time.
 - Inspect existing code and documentation before changing architecture.
 - Do not silently replace approved architecture or project conventions.
@@ -54,7 +60,8 @@ satisfied by repository or external-system evidence. Do not count proposed,
 partially implemented, scaffold-only, or unverified work. Update the ledger in
 the same change that completes a task. When the user gives a short instruction
 such as "continue", select the next unblocked work from the ledger and master
-task list while respecting dependencies, branch scope, and pull-request gates.
+task list within the active developer's ownership lane while respecting
+dependencies, branch scope, handoffs, and pull-request gates.
 
 ## Repository structure
 

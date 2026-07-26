@@ -7,7 +7,7 @@ Last reconciled: 2026-07-25
 - Master backlog: 242 unique task IDs
 - Verified complete: 24
 - Completion: 9.9%
-- Current gate: `PRG-012` pull request must pass required checks and merge
+- Current gate: approve and merge the two-developer ownership map
 
 This ledger is deliberately conservative. A task is counted only when its
 acceptance criteria and the repository Definition of Done are satisfied by
@@ -56,11 +56,11 @@ counted.
 
 ## Next unblocked work
 
-1. Merge the `PRG-012` pull request after its required checks pass.
-2. Complete the branching and release strategy for `PRG-014`.
-3. Define severity and incident classifications for `PRG-017`.
-4. Create the initial threat model and data-classification policy for
-   `PRG-018` and `PRG-019`.
+1. Merge the ownership map that assigns all 218 remaining tasks without
+   duplicates.
+2. Ekam: complete `PRG-014`, then `PRG-017`, `PRG-018`, and `PRG-019`.
+3. Abhinav: complete `PRG-020` and `PLAT-006`; schedule `PRG-002` when
+   stakeholders are available.
 
 SEC ingestion and AI implementation remain blocked until the foundation and
 applicable program-definition gates are complete.

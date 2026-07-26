@@ -14,6 +14,7 @@ Enterprise-grade AI research platform for collecting, organizing, analyzing, and
 - [Enterprise Requirements](docs/requirements/ENTERPRISE_REQUIREMENTS.md)
 - [Technical Design and 48-Week Implementation Plan](docs/design/TECHNICAL_DESIGN_AND_ROADMAP.md)
 - [Verified Project Status](docs/project-management/PROJECT_STATUS.md)
+- [Ekam and Abhinav Task Ownership](docs/project-management/TASK_OWNERSHIP.md)
 - [Risk Management and Registers](docs/project-management/RISK_MANAGEMENT.md)
 - [Data Source Inventory](docs/project-management/DATA_SOURCE_INVENTORY.md)
 - [Source Rights Classification](docs/project-management/SOURCE_RIGHTS_CLASSIFICATION.md)
@@ -37,9 +38,10 @@ Reduce the amount of repetitive work required during the first stage of equity r
 
 ## Status
 
-Engineering foundation in progress on `feature/PLAT-001-project-foundation`.
-SEC ingestion, document processing, financial extraction, and AI functionality
-have not begun.
+Engineering foundation and initial program-governance work are complete.
+Remaining work is split between Ekam and Abhinav in the authoritative ownership
+map. SEC ingestion, document processing, financial extraction, and AI
+functionality have not begun.
 
 ## Foundation architecture
 
