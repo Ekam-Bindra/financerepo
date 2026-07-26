@@ -64,7 +64,18 @@ financerepo/
 - Node.js 22 or newer.
 - pnpm 9.
 - Python 3.12.
-- Docker Desktop with Docker Compose.
+- A Docker-compatible runtime with Docker Compose v2. Docker Desktop works;
+  Colima is the validated free and open-source macOS option.
+
+Free macOS container setup:
+
+```bash
+brew install docker docker-compose docker-buildx colima
+# Follow Homebrew's caveat if Docker does not discover its Compose/Buildx plugins.
+colima start --cpu 2 --memory 4 --disk 20
+docker info
+docker compose version
+```
 
 ## Local setup
 
@@ -74,6 +85,8 @@ make setup
 make check
 make dev
 ```
+
+Use `colima stop` when the free macOS runtime is no longer needed.
 
 Local services:
 

@@ -14,7 +14,9 @@ COPY packages/api-contracts packages/api-contracts
 RUN pnpm --filter @equity-research/web build
 
 FROM node:22-alpine AS runner
-ENV NODE_ENV=production
+ENV NODE_ENV=production \
+    HOSTNAME=0.0.0.0 \
+    PORT=3000
 WORKDIR /app
 
 COPY --from=builder /app/apps/web/.next/standalone ./
@@ -24,4 +26,3 @@ COPY --from=builder /app/apps/web/public ./apps/web/public
 EXPOSE 3000
 
 CMD ["node", "apps/web/server.js"]
-

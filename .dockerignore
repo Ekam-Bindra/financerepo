@@ -1,0 +1,34 @@
+# Version control and local configuration
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+
+# Python environments and generated artifacts
+.venv
+**/__pycache__
+**/.pytest_cache
+**/.mypy_cache
+**/.ruff_cache
+**/*.egg-info
+htmlcov
+.coverage
+
+# Node.js and Next.js generated artifacts
+node_modules
+**/node_modules
+**/.next
+**/out
+**/coverage
+**/*.tsbuildinfo
+.pnpm-store
+
+# Local tools and runtime artifacts
+.DS_Store
+.idea
+.vscode
+*.log
+tmp
+dist
+build
