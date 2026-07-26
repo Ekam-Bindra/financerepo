@@ -5,9 +5,9 @@ Last reconciled: 2026-07-25
 ## Progress
 
 - Master backlog: 242 unique task IDs
-- Verified complete: 20
-- Completion: 8.3%
-- Current gate: `PRG-006`/`PRG-007` pull request must pass required checks and merge
+- Verified complete: 23
+- Completion: 9.5%
+- Current gate: `PRG-008`–`PRG-010` pull request must pass required checks and merge
 
 This ledger is deliberately conservative. A task is counted only when its
 acceptance criteria and the repository Definition of Done are satisfied by
@@ -25,6 +25,9 @@ counted.
 | PRG-005 | Initial, future, and excluded release scope defined | `docs/requirements/ENTERPRISE_REQUIREMENTS.md` |
 | PRG-006 | Product-risk register established with owners, controls, triggers, contingencies, and review points | `docs/project-management/PRODUCT_RISK_REGISTER.md` |
 | PRG-007 | Technical-risk register established with owners, controls, triggers, contingencies, and review points | `docs/project-management/TECHNICAL_RISK_REGISTER.md` |
+| PRG-008 | Initial data-source inventory established | `docs/project-management/DATA_SOURCE_INVENTORY.md` |
+| PRG-009 | Source licensing and usage-right classes established | `docs/project-management/SOURCE_RIGHTS_CLASSIFICATION.md` |
+| PRG-010 | Financial disclaimer requirements and release controls established | `docs/project-management/FINANCIAL_DISCLAIMER_REQUIREMENTS.md` |
 | PRG-011 | Initial technology stack approved and implemented | `docs/design/TECHNICAL_DESIGN_AND_ROADMAP.md` and foundation code |
 | PRG-013 | Coding and repository standards established | `AGENTS.md` and `CONTRIBUTING.md` |
 | PRG-015 | Definition of Ready established | `docs/project-management/MASTER_TASK_LIST.md` |
@@ -52,11 +55,12 @@ counted.
 
 ## Next unblocked work
 
-1. Merge the `PRG-006`/`PRG-007` pull request after its required checks pass.
-2. Reconcile the source inventory, licensing classification, and disclaimer
-   requirements for `PRG-008`, `PRG-009`, and `PRG-010`.
-3. Establish the architecture-decision-record process for `PRG-012`.
-4. Complete the branching and release strategy for `PRG-014`.
+1. Merge the `PRG-008`–`PRG-010` pull request after its required checks pass.
+2. Establish the architecture-decision-record process for `PRG-012`.
+3. Complete the branching and release strategy for `PRG-014`.
+4. Define severity and incident classifications for `PRG-017`.
+5. Create the initial threat model and data-classification policy for
+   `PRG-018` and `PRG-019`.
 
 SEC ingestion and AI implementation remain blocked until the foundation and
 applicable program-definition gates are complete.
