@@ -6,6 +6,9 @@ This is the authoritative ownership map for parallel work. Codex and both
 developers must read this file together with `PROJECT_STATUS.md` before
 selecting work.
 
+Abhinav’s GPT/coding-agent handoff prompt is maintained at
+`docs/prompts/ABHINAV_EXECUTION_PROMPT.md`.
+
 ## Allocation summary
 
 | Backlog state | Count |
