@@ -15,6 +15,9 @@ Enterprise-grade AI research platform for collecting, organizing, analyzing, and
 - [Technical Design and 48-Week Implementation Plan](docs/design/TECHNICAL_DESIGN_AND_ROADMAP.md)
 - [Verified Project Status](docs/project-management/PROJECT_STATUS.md)
 - [Risk Management and Registers](docs/project-management/RISK_MANAGEMENT.md)
+- [Data Source Inventory](docs/project-management/DATA_SOURCE_INVENTORY.md)
+- [Source Rights Classification](docs/project-management/SOURCE_RIGHTS_CLASSIFICATION.md)
+- [Financial Disclaimer Requirements](docs/project-management/FINANCIAL_DISCLAIMER_REQUIREMENTS.md)
 - [Two-Person Collaboration Workflow](docs/project-management/TWO_PERSON_COLLABORATION_WORKFLOW.md)
 - [Master Execution Prompt](docs/prompts/MASTER_EXECUTION_PROMPT.md)
 
