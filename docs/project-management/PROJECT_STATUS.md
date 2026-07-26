@@ -7,7 +7,7 @@ Last reconciled: 2026-07-25
 - Master backlog: 242 unique task IDs
 - Verified complete: 24
 - Completion: 9.9%
-- Current gate: approve and merge the two-developer ownership map
+- Current gate: begin owner-specific work from the merged ownership map
 
 This ledger is deliberately conservative. A task is counted only when its
 acceptance criteria and the repository Definition of Done are satisfied by
@@ -56,10 +56,8 @@ counted.
 
 ## Next unblocked work
 
-1. Merge the ownership map that assigns all 218 remaining tasks without
-   duplicates.
-2. Ekam: complete `PRG-014`, then `PRG-017`, `PRG-018`, and `PRG-019`.
-3. Abhinav: complete `PRG-020` and `PLAT-006`; schedule `PRG-002` when
+1. Ekam: complete `PRG-014`, then `PRG-017`, `PRG-018`, and `PRG-019`.
+2. Abhinav: complete `PRG-020` and `PLAT-006`; schedule `PRG-002` when
    stakeholders are available.
 
 SEC ingestion and AI implementation remain blocked until the foundation and

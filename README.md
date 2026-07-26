@@ -20,6 +20,7 @@ Enterprise-grade AI research platform for collecting, organizing, analyzing, and
 - [Source Rights Classification](docs/project-management/SOURCE_RIGHTS_CLASSIFICATION.md)
 - [Financial Disclaimer Requirements](docs/project-management/FINANCIAL_DISCLAIMER_REQUIREMENTS.md)
 - [Architecture Decision Records](docs/adr/README.md)
+- [Abhinav Execution Prompt](docs/prompts/ABHINAV_EXECUTION_PROMPT.md)
 - [Two-Person Collaboration Workflow](docs/project-management/TWO_PERSON_COLLABORATION_WORKFLOW.md)
 - [Master Execution Prompt](docs/prompts/MASTER_EXECUTION_PROMPT.md)
 
